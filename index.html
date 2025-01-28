@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ... metadatos ... -->
+</head>
+<body>
+    <form action="https://formsubmit.co/tu-email@dominio.com" method="POST">
+        <!-- Campos del formulario -->
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+        
+        <!-- Campos dinámicos (ejemplo) -->
+        <input type="text" name="titulo-solicitud" placeholder="Título de la solicitud">
+        <textarea name="comentarios" placeholder="Comentarios"></textarea>
+        <select name="prioridad">
+            <option value="high">Alta</option>
+            <option value="medium">Media</option>
+            <option value="low">Baja</option>
+        </select>
+
+        <!-- Configuración adicional de Formsubmit -->
+        <input type="hidden" name="_template" value="email_template_genealogia">
+        <input type="hidden" name="_next" value="https://tu-usuario.github.io/repositorio/gracias.html">
+        <input type="hidden" name="_subject" value="Nueva solicitud de genealogía">
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
